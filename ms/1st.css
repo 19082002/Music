@@ -57,16 +57,19 @@ button{
  text-align: center;
 }
 .btn{
- margin-top:5%;   
+   
 }
-.b1 ,.b2 ,.b3, .b4{
+.b1 ,.b2 ,.b3{
  width:50px;
  height:50px;
  align-items: center;
  justify-content: center;
+ user-select: none;
+ 
 }
 .b1,.b3{
     border: none;
+    margin-top:5%; 
     background-color: black;
     /* color:darkgreen; */
     color:rgb(226, 9, 92);
@@ -80,6 +83,8 @@ button{
     color:burlywood;
     font-size: 1cm;
     text-shadow: 2px 1px rgb(170, 101, 84);
+    margin-top: -22%;
+    height:35px;
 }
 .snd{
  width:120px;
@@ -102,6 +107,9 @@ background:blue;
  top:0; */
  position: fixed;
  bottom: 0;
+ left:0;
+ right:0;
+
  padding-top: 5%;
      background-color: rgb(206, 199, 193);
      /* display: inline;
@@ -126,7 +134,7 @@ cursor: pointer;
 
 .fb1,.fb2,.fb3{
     /* position:fixed; */
-
+user-select: none;
 border:none;
 width:10%;
 height:50px;
@@ -139,7 +147,7 @@ font-weight: bolder;
 text-shadow: 1px 2px rgb(83, 10, 10);
 }
 .fb2{
-    margin-top: 2%;
+    /* margin-top: 2%; */
     color:rgb(57, 57, 167);
 }
 #arrow{
@@ -205,4 +213,8 @@ h1{
          
     text-shadow: 1.5px 1px rgba(247, 244, 250, 0.774);
 
+}
+#last{
+    height:55px;
+    padding-bottom: 15px;
 }
