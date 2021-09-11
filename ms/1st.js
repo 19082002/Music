@@ -51,6 +51,11 @@ var musicname=[
  function nxt(){
   progress.style.width=0+"%";
   j=0;
+  if(i==-1)
+  {
+    music.src="2.mp3";
+    i=1;
+  }else
       i++;
       if(i==74){
         music.src="1.mp3";
@@ -68,6 +73,10 @@ var musicname=[
      if(i==-1){
      music.src="74.mp3";
      i=73;
+     }
+     if(i==-2){
+      music.src="74.mp3";
+      i=73;
      }
      else
      music.src=(i+1)+".mp3";
@@ -95,14 +104,15 @@ document.getElementById('b2').innerHTML="&#x23f8"
 document.getElementById('fb2').innerHTML="&#x23f8"
  document.getElementById('b2').style.backgroundColor="black"
 document.getElementById('b2').style.color="burlywood"
-document.getElementById('b2').style.fontSize="0.6cm"
+document.getElementById('b2').style.fontSize="0.9cm"
 // document.getElementById('fb2').style.backgroundColor="black"
 document.getElementById('fb2').style.color="rgb(192, 9, 137)"
 document.getElementById('fb2').style.fontSize="0.6cm"
 document.getElementById('b2').style.alignItems="center";
 document.getElementById('b2').style.justifyContent="center";
 document.getElementById('b2').style.width="50px"
-document.getElementById('b2').style.height="59px"
+document.getElementById('b2').style.marginTop="-3%"
+document.getElementById('b2').style.height="45px"
 
    }
      else{
